@@ -15,33 +15,34 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('           Tierney Cyren'),
-  handle: chalk.white('bitandbang'),
-  shorthandle: chalk.white('bnb'),
-  work: chalk.white('Staff Developer Advocate at Twilio'),
-  twitter: chalk.gray('https://twitter.com/') + chalk.cyan('bitandbang'),
-  npm: chalk.gray('https://npmjs.com/') + chalk.red('~bnb'),
-  github: chalk.gray('https://github.com/') + chalk.green('bnb'),
-  linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('bitandbang'),
-  web: chalk.cyan('https://bnb.im'),
-  npx: chalk.red('npx') + ' ' + chalk.white('bitandbang'),
-  labelWork: chalk.white.bold('    Work:'),
-  labelTwitter: chalk.white.bold(' Twitter:'),
-  labelnpm: chalk.white.bold('     npm:'),
-  labelGitHub: chalk.white.bold('  GitHub:'),
-  labelLinkedIn: chalk.white.bold('LinkedIn:'),
-  labelWeb: chalk.white.bold('     Web:'),
-  labelCard: chalk.white.bold('    Card:')
+  name: chalk.green.bold('               Sunil Aleti'),
+  work: chalk.white('Data Scientist'),
+  twitter: chalk.gray('https://twitter.com/') + chalk.cyan('aleti_sunil'),
+  blog: chalk.gray('https://dev.to/')+chalk.cyan('sunilaleti'),
+  github: chalk.gray('https://github.com/') + chalk.cyan('aletisunil'),
+  linkedin: chalk.gray('https://linkedin.com/in/') + chalk.cyan('sunilaleti'),
+  instagram: chalk.gray('https://instagram.com/') + chalk.cyan('sunil_aleti'),
+  web: chalk.cyan('https://sunilaleti.dev'),
+  npx: chalk.red('npx') + ' ' + chalk.white('sunilaleti'),
+  labelWork: chalk.white.bold('     Work:'),
+  labelTwitter: chalk.white.bold('  Twitter:'),
+  labelblog: chalk.white.bold('     Blog:'),
+  labelGitHub: chalk.white.bold('   GitHub:'),
+  labelLinkedIn: chalk.white.bold(' LinkedIn:'),
+  labelInstagram: chalk.white.bold('Instagram:'),
+  labelWeb: chalk.white.bold('      Web:'),
+  labelCard: chalk.white.bold('     Card:')
 }
 
 // Actual strings we're going to output
 const newline = '\n'
-const heading = `${data.name} / ${data.handle} / ${data.shorthandle}`
+const heading = `${data.name}`
 const working = `${data.labelWork}  ${data.work}`
 const twittering = `${data.labelTwitter}  ${data.twitter}`
-const npming = `${data.labelnpm}  ${data.npm}`
+const blogging = `${data.labelblog}  ${data.blog}`
 const githubing = `${data.labelGitHub}  ${data.github}`
 const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
+const insta = `${data.labelInstagram}  ${data.instagram}`
 const webing = `${data.labelWeb}  ${data.web}`
 const carding = `${data.labelCard}  ${data.npx}`
 
@@ -50,9 +51,10 @@ const output = heading + // data.name + data.handle
                newline + newline + // Add one whole blank line
                working + newline + // data.labelWork + data.work
                twittering + newline + // data.labelTwitter + data.twitter
-               npming + newline + // data.labelnpm + data.npm
+               blogging + newline + // data.labelnpm + data.npm
                githubing + newline + // data.labelGitHub + data.github
                linkedining + newline + // data.labelLinkedIn + data.linkedin
+               insta + newline + // labelInstagram + data.instagram
                webing + newline + newline + // data.labelWeb + data.web
                carding // data.labelCard + data.npx
 
